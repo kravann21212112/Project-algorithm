@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('admin_static', filename='css/admin.css') }}">
+</head>
+<body>
+  <div class="admin-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Admin Panel</h2>
+      <ul>
+        <li><a href="/admin/dashboard" class="active">Dashboard</a></li>
+        <li><a href="/admin/projects">Projects</a></li>
+        <li><a href="./edit_project.html">Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header>
+        <h1>Dashboard</h1>
+        <div class="user-info">
+          <span>Welcome, Admin</span>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="card">
+          <h3>Total Projects</h3>
+          <p>{{ projects_count }} Projects</p>
+        </div>
+        <div class="card">
+          <h3>Pending Updates</h3>
+          <p>2 Tasks</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

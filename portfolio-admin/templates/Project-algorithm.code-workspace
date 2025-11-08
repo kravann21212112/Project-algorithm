@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../Project-algorithm"
+		},
+		{
+			"path": "../../portfolio"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5505
+	}
+}
